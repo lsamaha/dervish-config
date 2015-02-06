@@ -1,0 +1,10 @@
+deploy:
+  provider: s3
+  access_key_id: AKIAJFUG3JRNHEBLCCGQ
+  secret_access_key:
+    secure: Qgr5wKhtrxYoeKg55T0r1TyBKt0MgR89ddg4krD1/Lnhvkjldf4+qQMu1j2/9VtAwJmvfqxN790DFH191Y0ogFlLEFTwMuRYQ5nULIb9iPTReWEJaqJ05P8LEjgbJko+bOxnqI8y3xmbhVDKfMTwlf+Ko94LSWmNZdKR1gDlrCc=
+  bucket: meadow-lark
+  upload-dir: conf-deploy/prod/dervish/sand/$TRAVIS_BUILD_NUMBER
+  acl: public_read
+  on:
+    repo: lsamaha/dervish-config
